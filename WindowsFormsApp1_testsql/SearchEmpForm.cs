@@ -8,11 +8,11 @@ using WindowsFormsApp1_testsql.Class; // อ้างอิงคลาส Datab
 //Program ดึงข้อมูลพนักงานมาแสดงที่ช่อง DataGitview
 namespace WindowsFormsApp1_testsql
 {
-    public partial class Form1 : Form
+    public partial class SearchEmpForm : Form
     {
-        private DatabaseConnections dbHelper = new DatabaseConnections(); // ใช้เชื่อมต่อฐานข้อมูล
+        private DatabaseConnections dbHelper = new DatabaseConnections("Princess"); // ใช้เชื่อมต่อฐานข้อมูล
 
-        public Form1()
+        public SearchEmpForm()
         {
             InitializeComponent();
 
@@ -31,7 +31,16 @@ namespace WindowsFormsApp1_testsql
         {
             try
             {
-                string query = "SELECT Titlename, Name FROM AcEmployeeProfile";
+                // ✅ เพิ่ม ROW_NUMBER(), IDNO, TaxNO, Year1 ในการ Query
+                string query = @"
+            SELECT 
+                ROW_NUMBER() OVER (ORDER BY Name ASC) AS [ลำดับที่], 
+                IDNO AS [รหัสพนักงาน], 
+                TaxNO AS [เลขประจำตัวผู้เสียภาษี], 
+                Titlename AS [คำนำหน้า], 
+                Name AS [ชื่อพนักงาน], 
+                Year1 AS [ปีที่เข้าทำงาน]
+            FROM AcEmployeeProfile";
 
                 if (!string.IsNullOrEmpty(filter))
                 {

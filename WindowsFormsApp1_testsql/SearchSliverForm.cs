@@ -6,12 +6,12 @@ using System.Text.RegularExpressions;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp1_testsql.Class;
-using static WindowsFormsApp1_testsql.Form2;
+using static WindowsFormsApp1_testsql.SearchSliverForm;
 using JPM_SilverTrade.Class;
 
 namespace WindowsFormsApp1_testsql
 {
-    public partial class Form2 : Form
+    public partial class SearchSliverForm : Form
     {
         // ✅ คลาสเก็บข้อมูลพนักงาน
         public class Emp
@@ -28,7 +28,7 @@ namespace WindowsFormsApp1_testsql
             }
         }
 
-        public Form2()
+        public SearchSliverForm()
         {
             InitializeComponent();
             LoadData();
@@ -38,7 +38,7 @@ namespace WindowsFormsApp1_testsql
         private void LoadData()
         {
             string sqlQuery = "select EmpCode, TitleName + ' ' + Name from TEmpProfile where Complete = 1 order by EmpCode asc";
-            DatabaseConnections db = new DatabaseConnections();
+            DatabaseConnections db = new DatabaseConnections("Princess");
             DataTable dt = db.ExecuteQuery(sqlQuery);
             if (dt.Rows.Count > 0)
             {
@@ -91,7 +91,7 @@ namespace WindowsFormsApp1_testsql
                 DateTime startDate = dtpStart.Value.Date;
                 DateTime endDate = dtpEnd.Value.Date.AddDays(1).AddSeconds(-1);
 
-                DatabaseConnections db = new DatabaseConnections();
+                DatabaseConnections db = new DatabaseConnections("Princess");
                 {
                     SqlParameter[] param = {
                         new SqlParameter("@EmpCode", comboBox1.SelectedValue),
@@ -210,7 +210,7 @@ namespace WindowsFormsApp1_testsql
                 DateTime startDate = dtpStart.Value.Date;
                 DateTime endDate = dtpEnd.Value.Date.AddDays(1).AddSeconds(-1);
 
-                DatabaseConnections db = new DatabaseConnections();
+                DatabaseConnections db = new DatabaseConnections("Princess");
                 {
                     SqlParameter[] param = {
                         new SqlParameter("@EmpCode", comboBox1.SelectedValue),

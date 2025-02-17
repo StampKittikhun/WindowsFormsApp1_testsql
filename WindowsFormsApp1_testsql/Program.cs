@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp1_testsql.CkeckWork_Form;
 
 namespace WindowsFormsApp1_testsql
 {
-    static class Program
+    static class Program 
     {
         [STAThread]
         static void Main()
@@ -11,8 +12,8 @@ namespace WindowsFormsApp1_testsql
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // เปิด LoginForm เป็นหน้าจอแรก
-            Application.Run(new Form2());
+            // เปิดหน้าจอแรก
+            Application.Run(new MainMenuForm());
         }
     }
 }

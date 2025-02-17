@@ -124,6 +124,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -135,38 +136,156 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CkeckWork-Form\Bathe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Bathe.Designer.cs">
+      <DependentUpon>Bathe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Bury.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Bury.Designer.cs">
+      <DependentUpon>Bury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Dress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Dress.Designer.cs">
+      <DependentUpon>Dress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Foundry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Foundry.Designer.cs">
+      <DependentUpon>Foundry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Polish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\Polish.Designer.cs">
+      <DependentUpon>Polish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\PolishAndBathe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\PolishAndBathe.Designer.cs">
+      <DependentUpon>PolishAndBathe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\SetDateSliver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\SetDateSliver.Designer.cs">
+      <DependentUpon>SetDateSliver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\uReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\uReportViewer.Designer.cs">
+      <DependentUpon>uReportViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\Center.cs" />
     <Compile Include="Class\DatabaseConnections.cs" />
     <Compile Include="Class\ReportGenerator.cs" />
+    <Compile Include="Class\UserSession.cs" />
     <Compile Include="CrystalReportSliver.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReportSliver.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="QRCode\QRCodeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="QRCode\QRCodeForm.Designer.cs">
+      <DependentUpon>QRCodeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="SearchEmpForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="SearchEmpForm.Designer.cs">
+      <DependentUpon>SearchEmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSliverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSliverForm.Designer.cs">
+      <DependentUpon>SearchSliverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JpmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JpmLogin.Designer.cs">
+      <DependentUpon>JpmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CkeckWork-Form\CompleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CkeckWork-Form\CompleteForm.Designer.cs">
+      <DependentUpon>CompleteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CkeckWork-Form\Bathe.resx">
+      <DependentUpon>Bathe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\Bury.resx">
+      <DependentUpon>Bury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\Dress.resx">
+      <DependentUpon>Dress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\Foundry.resx">
+      <DependentUpon>Foundry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\PasswordForm.resx">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\Polish.resx">
+      <DependentUpon>Polish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\PolishAndBathe.resx">
+      <DependentUpon>PolishAndBathe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\SetDateSliver.resx">
+      <DependentUpon>SetDateSliver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\uReportViewer.resx">
+      <DependentUpon>uReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportSliver.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportSliver.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="QRCode\QRCodeForm.resx">
+      <DependentUpon>QRCodeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="SearchEmpForm.resx">
+      <DependentUpon>SearchEmpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSliverForm.resx">
+      <DependentUpon>SearchSliverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JpmLogin.resx">
+      <DependentUpon>JpmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CkeckWork-Form\CompleteForm.resx">
+      <DependentUpon>CompleteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -194,6 +313,37 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="image\data2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\history2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\LogoJewelyPrincess2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\print2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\save2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\setting2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\user2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
